@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h2{
+  font-weight:200;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  display: flex;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  background-color: #1da06e;
+  justify-content:center;
+  width: 100%;
+  margin-inline: auto;
+  display: flex; 
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+}
+ 
+header.navbar-container .logo img {
+  justify-content: center;
+  gap: 2rem 1rem;
+  width: 90px;
+  
+}
+ 
+header.navbar-container .nav-list ul {  
+    display: flex;
+}
+ 
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+ 
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: black;
+  padding: 1.5rem ;
+  border-radius: 20px;
+  transition: all .5s ease-in-out;
+  margin-left:0vh ;
+}
+ 
+header.navbar-container .nav-list li:hover a {
+  
+  color: white;
+  transition-duration: 0.5s;
+}
+
+footer{
+  width:100%;
+  background-color: #1da06e;
+  text-align: center;
+}
+
+/*article{
+  float: left;
+  width:78%;
+  padding:10px;
+  margin-left: 10px;
+}*/
+
+@media screen and (max-width: 1300px) {
+  .card,
+  aside {
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+article.card{
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+aside {
+  align-items: center;
+  justify-content: center;
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px; 
+  margin-right: 10px;
+  width: 20%;
+}
+content {
+  float: left;
+  width: 75%;
+}
+main {
+  padding: 20px;
+  max-width: fit-content;
+}
+aside.section{
+  align-items: center;
+  justify-content: center;
+}
+.picture{
+  width: 100%;
+  max-width:fit-content;
+}
+.picture-bottom{
+  width: 100%;
+   max-height: 250px;
+   object-fit: cover;
+   object-position: bottom;
+}
+.picture-center{
+  width: 100%;
+   max-height: 250px;
+   object-fit: cover;
+   object-position: center;
+}
+/*
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-align:justify;
+    font-weight: 600;
+    font-size: 2em;
+    background-color: black;
+    padding:15px;
+    margin:auto;
+}
+nav{
+    background-color: aqua;
+    padding: 1.5%;
+    margin-left: 0;
+    width:100%;
+    position:sticky;
+}
+.logo:hover{
+    
+}
